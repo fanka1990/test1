@@ -4,8 +4,7 @@ try
 { 
   // Open a Transaction 
   ApiUtil.initTransaction(); 
- 
-  // Create a map of credentials (from user input) 
+   // Create a map of credentials (from user input) iuy
   Properties credentials = new Properties(); 
   credentials.put(ApiContextFactory.CREDENTIAL_USERNAME, username); 
   credentials.put(ApiContextFactory.CREDENTIAL_PASSWORD, password); 
