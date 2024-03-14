@@ -1,13 +1,7 @@
 3.亲测可用的图片上传代码
-
 - (IBAction)uploadButton:(id)sender {
-
 UIImage *image = [UIImage imageNamed:@"1.jpg"]; //图片名
-
 NSData *imageData = UIImageJPEGRepresentation(image,0.5);//压缩比例
-
 NSLog(@"字节数:%i",[imageData length]);
-
 // post url
-
 NSString *urlString = @"http://192.168.1.113:8090/text/UploadServlet";
