@@ -1,0 +1,31 @@
+选择完毕：
+
+-(void)imagePickerController:(UIImagePickerController*)pickerdidFinishPickingMediaWithInfo:(NSDictionary *)info
+
+{
+
+[picker dismissModalViewControllerAnimated:YES];
+
+UIImage * image=[info objectForKey:UIImagePickerControllerEditedImage];
+
+[self performSelector:@selector(selectPic:) withObject:imageafterDelay:0.1];
+
+}
+
+-(void)selectPic:(UIImage*)image
+
+{
+
+NSLog(@"image%@",image);
+
+imageView = [[UIImageView alloc] initWithImage:image];
+
+imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
+
+[self.viewaddSubview:imageView];
+
+[self performSelectorInBackground:@selector(detect:) withObject:nil];
+
+}
+
+detect为自己定义的方法，编辑选取照片后要实现的效果
