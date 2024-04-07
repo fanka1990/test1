@@ -4,13 +4,9 @@
 {
 
 // Create a graphics image context
-
 UIGraphicsBeginImageContext(newSize);
-
 // Tell the old image to draw in this newcontext, with the desired
-
 // new size
-
 [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
 
 // Get the new image from the context
