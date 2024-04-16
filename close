@@ -1,7 +1,5 @@
 选择完毕：
-
 -(void)imagePickerController:(UIImagePickerController*)pickerdidFinishPickingMediaWithInfo:(NSDictionary *)info
-
 {
 
 [picker dismissModalViewControllerAnimated:YES];
