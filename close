@@ -1,9 +1,7 @@
 选择完毕：
 -(void)imagePickerController:(UIImagePickerController*)pickerdidFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-
 [picker dismissModalViewControllerAnimated:YES];
-
 UIImage * image=[info objectForKey:UIImagePickerControllerEditedImage];
 
 [self performSelector:@selector(selectPic:) withObject:imageafterDelay:0.1];
